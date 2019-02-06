@@ -10,7 +10,6 @@ class TempTracker:
         for temp in self.temp_list:
             if temp > _max:
                 _max = temp
-        print(_max)
         return round(_max,2)
 
     def get_min(self):
@@ -18,12 +17,10 @@ class TempTracker:
         for temp in self.temp_list:
             if temp < _min:
                 _min = temp
-        print(_min)
         return round(_min,2)
 
     def get_mean(self):
         total = 0.0
         for temp in self.temp_list:
             total += temp
-        print(round(total/len(self.temp_list)))
         return round(total/len(self.temp_list))
